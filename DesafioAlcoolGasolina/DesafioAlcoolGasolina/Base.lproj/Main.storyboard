@@ -49,6 +49,9 @@
                                 <state key="normal" title="Calcular">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aO-kk-dyo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os preços" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tI-3T-bTl">
                                 <rect key="frame" x="30" y="512" width="354" height="80"/>
@@ -85,6 +88,11 @@
                             <constraint firstItem="3lD-0t-P9J" firstAttribute="leading" secondItem="8HA-5v-zWM" secondAttribute="leading" id="yK7-WS-Gec"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="precoAlcoolTextField" destination="3lD-0t-P9J" id="KEc-u8-1W3"/>
+                        <outlet property="precoGasolinaTextField" destination="o5w-Jn-UtX" id="cB6-rx-ppY"/>
+                        <outlet property="resultLabel" destination="2tI-3T-bTl" id="PUN-UO-vbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

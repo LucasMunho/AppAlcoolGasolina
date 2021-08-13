@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+   
+    @IBOutlet weak var precoAlcoolTextField: UITextField!
+    @IBOutlet weak var precoGasolinaTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    
+    @IBAction func tappedCalcular(_ sender: UIButton) {
+    }
+    
 }
 
