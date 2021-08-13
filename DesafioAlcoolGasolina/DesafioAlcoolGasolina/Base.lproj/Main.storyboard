@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioAlcoolGasolina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="MicrosoftTeams-image" translatesAutoresizingMaskIntoConstraints="NO" id="Tez-RJ-f2P">
+                                <rect key="frame" x="10" y="74" width="394" height="106"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Alcool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HA-5v-zWM">
+                                <rect key="frame" x="10" y="230" width="118" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-P2-HFZ">
+                                <rect key="frame" x="263" y="230" width="141" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3lD-0t-P9J">
+                                <rect key="frame" x="21" y="283" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5w-Jn-UtX">
+                                <rect key="frame" x="286" y="283" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G28-Fq-0JR">
+                                <rect key="frame" x="50" y="432" width="314" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os preços" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tI-3T-bTl">
+                                <rect key="frame" x="30" y="512" width="354" height="80"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DsH-xP-THk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2tI-3T-bTl" secondAttribute="trailing" constant="30" id="2JY-9X-v4A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tez-RJ-f2P" secondAttribute="trailing" constant="10" id="4ru-N1-ahP"/>
+                            <constraint firstItem="fuV-P2-HFZ" firstAttribute="trailing" secondItem="Tez-RJ-f2P" secondAttribute="trailing" id="9gE-kb-dPL"/>
+                            <constraint firstItem="8HA-5v-zWM" firstAttribute="top" secondItem="Tez-RJ-f2P" secondAttribute="bottom" constant="50" id="CNm-vL-MH8"/>
+                            <constraint firstItem="8HA-5v-zWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="R1q-Sy-ZI1"/>
+                            <constraint firstItem="G28-Fq-0JR" firstAttribute="top" secondItem="3lD-0t-P9J" secondAttribute="bottom" constant="115" id="SIj-ri-5Uo"/>
+                            <constraint firstItem="G28-Fq-0JR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="TAC-m2-Xzw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G28-Fq-0JR" secondAttribute="trailing" constant="50" id="TiG-rW-Q3C"/>
+                            <constraint firstItem="fuV-P2-HFZ" firstAttribute="top" secondItem="Tez-RJ-f2P" secondAttribute="bottom" constant="50" id="bQR-x8-Yxp"/>
+                            <constraint firstItem="Tez-RJ-f2P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cMC-73-k81"/>
+                            <constraint firstItem="Tez-RJ-f2P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="dth-N3-u80"/>
+                            <constraint firstItem="o5w-Jn-UtX" firstAttribute="centerY" secondItem="3lD-0t-P9J" secondAttribute="centerY" id="f0V-VE-5kb"/>
+                            <constraint firstItem="o5w-Jn-UtX" firstAttribute="trailing" secondItem="fuV-P2-HFZ" secondAttribute="trailing" id="fbf-Fk-RVj"/>
+                            <constraint firstItem="3lD-0t-P9J" firstAttribute="top" secondItem="8HA-5v-zWM" secondAttribute="bottom" constant="29" id="pAB-J9-2Qr"/>
+                            <constraint firstItem="2tI-3T-bTl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qKt-nh-U9b"/>
+                            <constraint firstItem="fuV-P2-HFZ" firstAttribute="centerY" secondItem="8HA-5v-zWM" secondAttribute="centerY" id="rz1-dL-bdT"/>
+                            <constraint firstItem="8HA-5v-zWM" firstAttribute="leading" secondItem="Tez-RJ-f2P" secondAttribute="leading" id="sny-hS-w9p"/>
+                            <constraint firstItem="2tI-3T-bTl" firstAttribute="top" secondItem="G28-Fq-0JR" secondAttribute="bottom" constant="50" id="wrv-5Q-Ckj"/>
+                            <constraint firstItem="3lD-0t-P9J" firstAttribute="leading" secondItem="8HA-5v-zWM" secondAttribute="leading" id="yK7-WS-Gec"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="94"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MicrosoftTeams-image" width="407" height="106"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
