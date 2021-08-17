@@ -7,20 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
    
     @IBOutlet weak var precoAlcoolTextField: UITextField!
     @IBOutlet weak var precoGasolinaTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var calcularButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.precoAlcoolTextField.delegate = self
+        self.precoGasolinaTextField.delegate = self
         
     }
-
+   
     
     @IBAction func tappedCalcular(_ sender: UIButton) {
+        
         let precoAlcool = Double(precoAlcoolTextField.text ?? "") ?? 0
         let precoGasolina = Double(precoGasolinaTextField.text ?? "") ?? 0
         
